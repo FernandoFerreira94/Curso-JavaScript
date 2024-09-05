@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .atividade {
+        width: 70%;
+        background: linear-gradient(rgb(158, 112, 57)60%, rgba(0, 0, 0, 0.868));
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+
+        input {
+            height: 30px;
+            width: 25%;
+            font-size: 20px;
+            margin-bottom: 30px;
+            padding: 5px;
+        }
+
+        button {
+            width: 15%;
+            padding: 8px 5px;
+            border: none;
+            background-color: rgb(13, 13, 13, 0.8);
+            color: white;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        button:hover {
+            background-color: rgb(88, 62, 31);
+            transform: scale(1.01);
+        }
+
+        p {
+            width: auto;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            font-weight: 600;
+            padding: 0px 5px;
+            text-align: center;
+            border-radius: 10px;
+        }
+    }
+
+    .atividade2 {
+        width: 70%;
+        background: linear-gradient(rgb(167, 212, 237), rgb(0, 0, 0, 0.9) 90%);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+
+        span {
+            margin: 7px;
+        }
+
+        input {
+            border: none;
+            margin: 2px;
+            text-align: center;
+            width: 35%;
+            font-size: 14px;
+            padding: 5px;
+            border-radius: 10px;
+            background-color: aliceblue;
+        }
+
+        small {
+            font-size: 10px;
+            margin: 3px;
+        }
+
+        .btn {
+            margin: 20px 0px 5px 0px;
+            border: none;
+            border-radius: 12px;
+            background-color: rgb(127, 177, 246);
+            font-weight: 600;
+            font-size: 18px;
+            padding: 8px 10px;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+
+        .btn:hover {
+            box-shadow: 0px 0px 4px black;
+        }
+
+        p {
+            margin: 5px;
+            text-transform: uppercase;
+        }
+
+        table {
+            border: 2px black;
+            border-style: double;
+            margin-top: 10px;
+            width: 80%;
+            text-align: center;
+            background-color: aliceblue;
+            padding: 5px;
+
+            td,
+            th {
+                border-bottom: 1px solid rgb(10, 10, 10, 0.2);
+            }
+
+            th {
+                padding-bottom: 5px;
+            }
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="atividade">
+            <h1>Qual e sua idade?</h1>
+            <input type="text" name="" id="idade" placeholder="digite sua idade">
+            <button onclick="calIdade()">Calcular</button>
+            <p id="idade-final"></p>
+        </div>
+    </div>
+    <hr>
+
+    <div class="container">
+        <div class="atividade2">
+            <h2>Informe seu dados:</h2>
+            <span>Nome:</span>
+            <input type="text" id="info-nome" placeholder="digite seu nome">
+            <span>Altura</span>
+            <input type="text" id="info-altura" placeholder="digite sua altura em cemtimetros">
+            <small>Exemplo: 1,50 Metros = 15000 centimetros</small>
+            <span>Peso</span>
+            <input type="text" placeholder="Digite seu peso" id="info-peso">
+            <button onclick="calImc()" class="btn">Calcular</button>
+            <h3>Resultado</h3>
+            <p id="nome">  </p>
+            <p id="altura">  </p>
+            <p id="peso">  </p>
+            <p id="imc">  </p>
+            <table>
+                <tr>
+                    <th>IMC</th>
+                    <th>Classificação</th>
+                    <th>Obesidade(grau)</th>
+                </tr>
+                <tr>
+                    <td>Menor que 18.5</td>
+                    <td>Magreza</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Entre 18.5 e 24.9</td>
+                    <td>Normal</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>ENtre 25.0 e 29.9</td>
+                    <td>Sobrepeso</td>
+                    <td>I</td>
+                </tr>
+                <tr>
+                    <td>Entre 30 e 39.9</td>
+                    <td>Obesidade</td>
+                    <td>II</td>
+                </tr>
+                <tr>
+                    <td>Maior que 40</td>
+                    <td>Obesidade Grave</td>
+                    <td>III</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+</body>
+<script src="./atividade1.js"> </script>
+
+</html>
