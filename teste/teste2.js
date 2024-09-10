@@ -72,3 +72,108 @@ let horario = function () {
     document.getElementById('horario').innerHTML = `${horas}:${minute}:${segundos}`; // horario
 }
 setInterval(horario) // fica ativado infinito a função
+
+document.write('<hr>')
+let data = new Date()
+//set ele acrecenta o valor na data
+//get recupera o valor da data atualmente
+document.write(data.toString()) // data em formato string.
+data.setDate(data.getDate() + 3) // add ou remover dias
+data.setMonth(data.getMonth() + 2) // add ou remover meses
+data.setFullYear(data.getFullYear() + 2) // add ou remover anos
+document.write('<br>')
+document.write(data.toString()) // data em formato string.
+document.write('<br>')
+document.write('------------------')
+
+//-------------final datas ---------------
+
+//--------- Inicio Calcular diferenca de datas -----------
+// criar uma data new Date(year, month(0a11), day, hours, minutes, sencond, millisedonds)
+let data1 = new Date(2023, 10, 5, 12, 30, 10); //data criada
+let data2 = new Date(); // data atual
+
+let dataInicial = document.getElementById('dataInicial')
+let dataAtual = document.getElementById('dataAtual')
+let dateFinal = document.getElementById('dateFinal')
+
+dataInicial.innerHTML = data1
+dataAtual.innerHTML = data2
+
+document.write('<br>')
+document.write(data1.getTime()) // retorna quantos segundos se passaram desde 01/01/1970 ate a data atual
+document.write('<br>')
+document.write(data2.getTime())// retorna quantos segundos se passaram desde 01/01/1970 ate a data atual
+document.write('<br>')
+
+let dataFinal = data2 - data1
+document.write(dataFinal) // calculo para saber diferenca de milisegundos diferenca
+document.write('<br>')
+
+// dia = 24 horas = 60 minutos = 1000 millisegundos
+let dayTotal = 1 * 24 * 60 * 60 * 1000 // calculo para saber quantos millisegundos tem no dia
+document.write('um dia tem: ' + dayTotal + ' de millisegundos')
+document.write('<br>')
+let dataDifenca = dataFinal / dayTotal
+
+let Final = Math.ceil(dataDifenca) // Math.ceil arredonta para cima
+document.write('diferença de dias: ' + Final)
+document.write('<br>')
+dateFinal.innerHTML = Final
+
+//--------- Final Calcular diferenca de datas -----------
+
+
+//-------------- eventos --------------
+/*
+        Mouse
+onclick =  curso clica 1vez
+ondbclick = curso clica 2vezes
+onmouseover = curso passa pelo elemento
+onmouseout = curso sai do elemento
+
+        Teclado
+onKeyDown = tecla e pressionada
+oneKeypress = tecla pressionada
+oneKeyup = tecla e liberada
+
+        Formulario
+onfocus = aciona quando recebe o foco do mouse
+onblur = aciona quando o elemento perde o foco
+onchange = aciona quando elemente e modificado
+        Janela
+onresize = aciona quando pagina muda o tamanho
+onscroll = scroll do mouse e acionado
+
+*/
+//-------------Mouse-------------
+function mouse1() {
+    document.getElementById('div').style.background = 'black'
+}
+
+function mouse2() {
+    document.getElementById('div').style.background = '#ccc'
+}
+
+function mouse3() {
+    document.getElementById('div').style.background = 'blue'
+}
+
+function mouse4() {
+    document.getElementById('div').style.background = 'red'
+}
+
+//------------Teclado--------------
+function teclado1() {
+    document.getElementById('div1').style.background = 'black'
+}
+
+function teclado2() {
+    document.getElementById('div1').style.background = 'blue'
+}
+
+function teclado3() {
+    document.getElementById('div1').style.background = 'green'
+}
+
+//
