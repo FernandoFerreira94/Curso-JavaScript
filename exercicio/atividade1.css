@@ -1,0 +1,303 @@
+* {
+  font-family: "Montserrat", "Sora";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin-bottom: 300px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.atividade {
+  width: 70%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgb(158, 112, 57)), to(rgba(0, 0, 0, 0.868)));
+  background: linear-gradient(rgb(158, 112, 57) 60%, rgba(0, 0, 0, 0.868));
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+.atividade input {
+  height: 30px;
+  width: 25%;
+  font-size: 20px;
+  margin-bottom: 30px;
+  padding: 5px;
+}
+.atividade button {
+  width: 15%;
+  padding: 8px 5px;
+  border: none;
+  background-color: rgba(13, 13, 13, 0.8);
+  color: white;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.atividade button:hover {
+  background-color: rgb(88, 62, 31);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+.atividade p {
+  width: auto;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 0px 5px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.atividade2 {
+  width: 70%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgb(167, 212, 237)), to(rgba(0, 0, 0, 0.9)));
+  background: linear-gradient(rgb(167, 212, 237) 10%, rgba(0, 0, 0, 0.9) 100%);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+.atividade2 span {
+  margin: 7px;
+}
+.atividade2 input {
+  border: none;
+  margin: 2px;
+  text-align: center;
+  width: 35%;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: aliceblue;
+}
+.atividade2 small {
+  font-size: 10px;
+  margin: 3px;
+}
+.atividade2 .btn {
+  margin: 20px 0px 5px 0px;
+  border: none;
+  border-radius: 12px;
+  background-color: rgb(127, 177, 246);
+  font-weight: 600;
+  font-size: 18px;
+  padding: 8px 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+.atividade2 .btn:hover {
+  -webkit-box-shadow: 0px 0px 4px black;
+          box-shadow: 0px 0px 4px black;
+}
+.atividade2 p {
+  margin: 5px;
+  text-transform: uppercase;
+}
+.atividade2 table {
+  border: 2px black;
+  border-style: double;
+  margin-top: 10px;
+  width: 80%;
+  text-align: center;
+  background-color: aliceblue;
+  padding: 5px;
+}
+.atividade2 table td,
+.atividade2 table th {
+  border-bottom: 1px solid rgba(10, 10, 10, 0.2);
+}
+.atividade2 table th {
+  padding-bottom: 5px;
+}
+
+.atividade3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+  padding: 20px 40px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, rgb(27, 27, 27)), color-stop(50%, rgba(25, 25, 25, 0.6)), to(rgb(27, 27, 27)));
+  background: linear-gradient(to right, rgb(27, 27, 27) 20%, rgba(25, 25, 25, 0.6) 50%, rgb(27, 27, 27));
+  color: white;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  margin: 15px;
+}
+
+.btnSoma,
+.btnSubtracao {
+  font-size: 16px;
+  padding: 6px 8px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, rgba(25, 25, 25, 0.6)), to(rgb(27, 27, 27)));
+  background: linear-gradient(to right, rgba(25, 25, 25, 0.6) 40%, rgb(27, 27, 27));
+  color: white;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.btnSoma:hover,
+.btnSubtracao:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#num1,
+#num2 {
+  padding: 3px 5px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+#atv4 {
+  height: 50px;
+}
+
+.foco {
+  background-color: lightblue;
+}
+
+.blur {
+  background-color: lightcoral;
+}
+
+.menor5 {
+  background-color: lightgoldenrodyellow;
+}
+
+.maior5 {
+  background-color: lightgreen;
+}
+
+.calculadora {
+  border: 3px solid black;
+  min-width: 250px;
+  width: 30%;
+  margin: 30px 0;
+  padding: 25px 5px;
+  border-radius: 10px;
+  background-color: black;
+}
+.calculadora #display {
+  width: 90%;
+  text-align: right;
+  padding: 8px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 1px solid rgb(50, 50, 50);
+  -webkit-box-shadow: 0 0 0 1px rgb(50, 50, 50);
+          box-shadow: 0 0 0 1px rgb(50, 50, 50);
+  background: white;
+  height: 50px;
+}
+.calculadora .container-btn-1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 10px 1fr 10px 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
+  width: 100%;
+  gap: 10px;
+  padding: 0 5%;
+  margin-top: 20px;
+}
+.calculadora .container-btn-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  gap: 10px;
+  padding: 0 5%;
+  margin-top: 10px;
+}
+.calculadora .container-btn-3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 10px 1fr 10px 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
+  width: 100%;
+  gap: 10px;
+  padding: 0 5%;
+  margin-top: 10px;
+  position: relative;
+}
+.calculadora .container-btn-3 #igual {
+  height: 90px;
+  position: absolute;
+  bottom: 0px;
+  right: 5%;
+  width: 19%;
+  border-radius: 10px;
+}
+.calculadora button {
+  border-radius: 10px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 17px;
+  background-color: rgb(35, 35, 35);
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: white;
+}
+.calculadora button:hover {
+  background: rgb(50, 50, 50);
+}
