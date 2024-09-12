@@ -102,6 +102,7 @@ let cal = function (numero1, numero2, operação) {
 }
 
 // ------------- mudando cor de fundo texto ---------
+// usando onkeyup / onfocus / onclick / className /
 var letra = document.getElementById('atv4').innerHTML
 
 function bg(ativo)  {
@@ -133,4 +134,24 @@ function escrever() {
 }
 
 
+//------------ Calculadora ------------
 
+
+var display = document.getElementById('display')
+
+function calculadora(tipo,valor) {
+    if (tipo == 'acao') {
+        if (valor == 'ac') {
+            display.value = ''
+        }
+        if (valor == '/' || valor == '*' || valor == '-' || valor == '+' || valor == '.') {
+            display.value += valor
+        }
+        if (valor == 'igual') {
+           let resultdado = eval(display.value)
+           display.value = resultdado
+        }
+    } else if (tipo == 'num') {
+        display.value += valor
+    }
+}
