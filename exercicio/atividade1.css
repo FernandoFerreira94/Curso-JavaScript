@@ -301,3 +301,92 @@ body {
 .calculadora button:hover {
   background: rgb(50, 50, 50);
 }
+
+.titulo {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 220, 125, 0.837)), color-stop(110%, rgb(134, 134, 25)));
+  background: linear-gradient(rgba(238, 220, 125, 0.837), rgb(134, 134, 25) 110%);
+  width: 80%;
+}
+.titulo h2 {
+  font-size: 40px;
+  color: green;
+  text-align: center;
+  font-weight: 700;
+}
+
+.listaFeira {
+  padding: 30px 0;
+  width: 80%;
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(226, 222, 198, 0.837);
+}
+.listaFeira label {
+  font-size: 16px;
+  font-weight: 500;
+}
+.listaFeira input {
+  padding: 4px 8px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  font: inherit;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+  -webkit-box-shadow: 2px 2px 3px black;
+          box-shadow: 2px 2px 3px black;
+  font-weight: 500;
+}
+.listaFeira input:hover, .listaFeira input:focus, .listaFeira button:hover {
+  outline: none;
+  -webkit-box-shadow: 2px 2px 5px green;
+          box-shadow: 2px 2px 5px green;
+}
+.listaFeira input:focus, .listaFeira button:focus {
+  background-color: rgba(220, 252, 220, 0.649);
+}
+.listaFeira button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px auto;
+  padding: 6px 8px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+  border: none;
+  -webkit-box-shadow: 2px 2px 3px black;
+          box-shadow: 2px 2px 3px black;
+  background-color: whitesmoke;
+}
+.listaFeira ol {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+.listaFeira li {
+  border-bottom: 1px solid black;
+  width: 25%;
+}
