@@ -1,0 +1,138 @@
+* {
+  font-family: "Montserrat", "Sora";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin-bottom: 300px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fundo {
+  height: 800px;
+  background-image: url(../exercicio/fundo-com-frutas-e-legumes_23-2148485146.avif);
+  background-repeat: no-repeat;
+  background-size: 130%;
+}
+
+.titulo {
+  width: 80%;
+}
+.titulo h2 {
+  font-size: 44px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.listaFeira {
+  height: 100%;
+  width: 80%;
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(226, 222, 198, 0.837);
+  margin: 20px 0;
+  padding: 30px 0;
+  position: relative;
+}
+.listaFeira form {
+  position: absolute;
+  top: 80px;
+}
+.listaFeira .lista {
+  width: 70%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+  margin: 10px;
+  height: 60%;
+  margin-top: 10%;
+}
+.listaFeira label {
+  font-size: 16px;
+  font-weight: 500;
+}
+.listaFeira input {
+  padding: 4px 8px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  font: inherit;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+  -webkit-box-shadow: 2px 2px 3px black;
+          box-shadow: 2px 2px 3px black;
+  font-weight: 500;
+}
+.listaFeira input:hover, .listaFeira input:focus, .listaFeira button:hover {
+  outline: none;
+  -webkit-box-shadow: 2px 2px 5px green;
+          box-shadow: 2px 2px 5px green;
+}
+.listaFeira input:focus, .listaFeira button:focus {
+  background-color: rgba(220, 252, 220, 0.649);
+}
+.listaFeira button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px auto;
+  padding: 6px 8px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+  border: none;
+  -webkit-box-shadow: 2px 2px 3px black;
+          box-shadow: 2px 2px 3px black;
+  background-color: whitesmoke;
+}
+.listaFeira ol {
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  row-gap: 10px;
+}
+.listaFeira li {
+  border-bottom: 1px solid black;
+  width: 75%;
+}
+.listaFeira #clear {
+  position: absolute;
+  bottom: 50px;
+}

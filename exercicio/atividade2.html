@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/atividade2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container fundo" style="flex-direction: column; justify-content: start; ">
+        <div class="titulo">
+            <h2>Lista da Feira</h2>
+        </div>
+            <div class="listaFeira">
+            <form action="">
+                <label for="Feira">Adicionar:  </label>
+                <input type="text" name="Feira" id="feira" placeholder="Adiciona na lista">
+                <button type="button" onclick="adcicionar('feira')">Adicionar</button>
+            </form>
+            <div class="lista">
+                <ol id="lista1">
+                    
+                </ol>
+                <ol class="lista2">
+                </ol>
+            </div>
+            <button type="button" onclick="adcicionar(this.id)" id="clear">Limpar lista</button>
+        </div>
+    </div>
+    
+</body>
+<script src="./atividade2.js"></script>
+</html>
