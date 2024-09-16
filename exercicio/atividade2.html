@@ -11,20 +11,20 @@
         <div class="titulo">
             <h2>Lista da Feira</h2>
         </div>
-            <div class="listaFeira">
-            <form action="">
-                <label for="Feira">Adicionar:  </label>
-                <input type="text" name="Feira" id="feira" placeholder="Adiciona na lista">
-                <button type="button" onclick="adcicionar('feira')">Adicionar</button>
-            </form>
+        <div class="listaFeira">
+                    <form action="">
+                        <label for="Feira">Adicionar:  </label>
+                        <input type="text" name="Feira" id="feira" placeholder="Adiciona na lista">
+                        <button type="button" onclick="adicionar('feira')">Adicionar</button>
+                        <button type="button" onclick="ordenar()">Organizar</button>
+                    </form>
             <div class="lista">
                 <ol id="lista1">
-                    
                 </ol>
                 <ol class="lista2">
                 </ol>
             </div>
-            <button type="button" onclick="adcicionar(this.id)" id="clear">Limpar lista</button>
+            <button type="button" onclick="limpar()" id="clear">Limpar lista</button>
         </div>
     </div>
     

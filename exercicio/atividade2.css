@@ -40,7 +40,6 @@ body {
 .listaFeira {
   height: 100%;
   width: 80%;
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,7 +60,7 @@ body {
 }
 .listaFeira form {
   position: absolute;
-  top: 80px;
+  top: 50px;
 }
 .listaFeira .lista {
   width: 70%;
@@ -89,12 +88,15 @@ body {
           box-shadow: 2px 2px 3px black;
   font-weight: 500;
 }
-.listaFeira input:hover, .listaFeira input:focus, .listaFeira button:hover {
+.listaFeira input:hover, .listaFeira button:hover {
   outline: none;
   -webkit-box-shadow: 2px 2px 5px green;
           box-shadow: 2px 2px 5px green;
 }
-.listaFeira input:focus, .listaFeira button:focus {
+.listaFeira button:hover {
+  background-color: lightgreen;
+}
+.listaFeira input:active, .listaFeira button:active {
   background-color: rgba(220, 252, 220, 0.649);
 }
 .listaFeira button {
@@ -114,7 +116,8 @@ body {
   background-color: whitesmoke;
 }
 .listaFeira ol {
-  border: 1px solid red;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,4 +138,20 @@ body {
 .listaFeira #clear {
   position: absolute;
   bottom: 50px;
+}
+.listaFeira #clear:hover {
+  background-color: lightcoral;
+  -webkit-box-shadow: 2px 2px 5px transparent;
+          box-shadow: 2px 2px 5px transparent;
+}
+.listaFeira .x {
+  padding: 0px 8px;
+  margin: 0px 15px 5px 0;
+  display: inline;
+  float: right;
+}
+.listaFeira .x:hover {
+  background-color: lightcoral;
+  -webkit-box-shadow: 2px 2px 3px transparent;
+          box-shadow: 2px 2px 3px transparent;
 }
