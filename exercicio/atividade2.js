@@ -34,5 +34,40 @@ function limpar() {
       return  campoLista.innerHTML = ''
 }
 
+// ------------- tabuada --------------
 
+let tabela = document.getElementById('tabela')
+let number = document.getElementById('number')
+
+function tabu(n) {
+
+    if(number.value == '' || number.value == '0') {
+        alert('digite um numero')
+        number.innerHTML = ''
+    } else {       
+        document.getElementById('number').value = ''
+        tabela.innerHTML = ''
+        let ul = document.createElement('ul');
+        ul.innerHTML += `<h3>tabuada do ${n}</h3>`
+        for (let i = 1; i <= 10; i++) {
+            ul.innerHTML += `<li>${n} x ${i} = ${res = n*i}</li>`       
+        }
+        tabela.appendChild(ul);
+    }
+}
+
+function tabuada() {
+    tabela.innerHTML = ''
+    for(let x = 1; x <= 10; x++) {
+        let ul = document.createElement('ul');
+        ul.innerHTML += `<h3>tabuada do ${x}</h3>`
+        for(let y = 1; y <= 10; y++) {
+            ul.innerHTML += `<li>${x} x ${y} = ${res = x*y}</li>`
+        }
+        tabela.appendChild(ul);
+    }
+}
+function limpar() {  
+    tabela.innerHTML = ''
+}
 

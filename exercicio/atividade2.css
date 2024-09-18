@@ -155,3 +155,215 @@ body {
   -webkit-box-shadow: 2px 2px 3px transparent;
           box-shadow: 2px 2px 3px transparent;
 }
+
+.tabuada {
+  font-family: Arial, Helvetica, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(232, 175, 100)), to(rgb(150, 87, 120)));
+  background: linear-gradient(rgb(232, 175, 100), rgb(150, 87, 120));
+  width: 80%;
+  height: 100%;
+  position: relative;
+}
+.tabuada button {
+  border: none;
+  padding: 5px 20px;
+  margin: 8px 0;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: bold;
+  -webkit-box-shadow: 2px 2px 4px black;
+          box-shadow: 2px 2px 4px black;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.tabuada button:hover {
+  -webkit-transform: translate(0, -2px);
+          transform: translate(0, -2px);
+}
+.tabuada .title h1 {
+  color: rgb(0, 0, 0);
+  font-size: 38px;
+  text-decoration: underline;
+}
+.tabuada .contador {
+  margin: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.tabuada .contador label {
+  font-size: 20px;
+  font-weight: 400;
+}
+.tabuada .contador #number {
+  width: 50%;
+  display: block;
+  margin: 5px 0;
+  padding: 7px 0 7px 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  -webkit-box-shadow: inset 0 0 5px 1px black;
+          box-shadow: inset 0 0 5px 1px black;
+}
+.tabuada .tabela {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 90%;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.536);
+  border-radius: 15px;
+}
+.tabuada .tabela h3 {
+  text-align: start;
+  margin: 10px -20px;
+  padding: 0;
+}
+.tabuada .tabela ul {
+  margin: 5px;
+}
+.tabuada .btnClear {
+  margin: 20px 0;
+}
+.tabuada .ballTopLeft {
+  width: 20%;
+  height: 17%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(23, 23, 193, 0.966)), to(rgba(0, 0, 0, 0.39)));
+  background: linear-gradient(rgba(23, 23, 193, 0.966), rgba(0, 0, 0, 0.39));
+  -webkit-animation-name: fy;
+          animation-name: fy;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.tabuada .ballTopRigth {
+  width: 20%;
+  height: 17%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(23, 23, 193, 0.966)), to(rgba(0, 0, 0, 0.39)));
+  background: linear-gradient(rgba(23, 23, 193, 0.966), rgba(0, 0, 0, 0.39));
+  -webkit-animation-name: fy1;
+          animation-name: fy1;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.tabuada ul {
+  -webkit-animation-name: lista;
+          animation-name: lista;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.volta {
+  opacity: 0;
+}
+
+@-webkit-keyframes fy {
+  from {
+    border-radius: 50% 0;
+  }
+  to {
+    border-radius: 0 50%;
+  }
+}
+
+@keyframes fy {
+  from {
+    border-radius: 50% 0;
+  }
+  to {
+    border-radius: 0 50%;
+  }
+}
+@-webkit-keyframes fy1 {
+  from {
+    border-radius: 0 50%;
+  }
+  to {
+    border-radius: 50% 0;
+  }
+}
+@keyframes fy1 {
+  from {
+    border-radius: 0 50%;
+  }
+  to {
+    border-radius: 50% 0;
+  }
+}
+@-webkit-keyframes lista {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes lista {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes listaVolta {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+@keyframes listaVolta {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
